@@ -14,6 +14,10 @@ def print_info():
     print('B: tập biến cơ sở - có m phần tử, tất cả các giá trị này đều không âm')
     print('V: tập biến ngoài cơ sở - tất cả các biến trong này đều có giá trị bằng 0')
     print('A_B, A_V: tương ứng là các ma trận cơ sở và ngoài cơ sở')
+    print('lambda: biến đối ngẫu - vector m chiều - đại lượng liên quan đến các ràng buộc của bài toán gốc')
+    print('mu: reduced cost - đại lượng cho biết mức độ ảnh hưởng của việc đưa biến ngoài cơ sở vào bài toán')
+    print('mu_V: reduced cost - vector')
+
 
 class LinearProgram:
     def __init__(self, A, b, c):
@@ -313,4 +317,5 @@ if __name__ == "__main__":
             print('Kết quả sai')
             
     except Exception as e:
+
         print("Lỗi:", e)
